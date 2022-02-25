@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quintessential&family=Righteous&family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilo/estilo.css">
     <title>Document</title>
 </head>
@@ -52,7 +53,8 @@
             <!--Segunda sección de Plantel-->
             <div id="plantel">
                 <h2 id="subtitulo">JUGADORES</h2>
-                <table>
+                <table
+                data-aos="zoom-in-up">
                     <tr>
                         <th>Nombre</th>
                         <th>Posición</th>
@@ -160,6 +162,12 @@
             </div>
         </div>
     </footer> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

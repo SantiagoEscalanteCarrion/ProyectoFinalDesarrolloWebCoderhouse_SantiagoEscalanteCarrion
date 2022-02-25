@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quintessential&family=Righteous&family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo/estilo.css">
     <title>Document</title>
 </head>
@@ -72,10 +73,10 @@
 
             <!--Segunda sección del main del index-->
             <div id="padreMainDos">
-                <div id="imgIndex">
+                <div id="imgIndex" data-aos="fade-right">
                     <img src="Imagenes/imagen 1.jpg" alt="img_1">
                 </div>
-                <div id="imgIndex">
+                <div id="imgIndex" data-aos="fade-left">
                     <img src="Imagenes/imagen 2.jpg" alt="img_2">
                 </div>
             </div>
@@ -102,6 +103,12 @@
             </div>
         </div>
     </footer> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
