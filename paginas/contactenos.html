@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quintessential&family=Righteous&family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="hijoHeaderUno">
+            <a href="../index.html"><img src="../Imagenes/Logo.png" alt="Logo"></a>
+        </div>
+        <div id="hijoHeaderDos">
+            <h1 id="tituloHeaderUno">MANCHESTER UNITED</h1>
+            <h2 id="tituloHeaderDos">FANS</h2>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li>
+                <a id="textoNav" href="../index.html">INICIO</a>
+            </li>
+            <li>
+                <a id="textoNav" href="historia.html">HISTORIA</a>
+            </li>
+            <li>
+                <a id="textoNav" href="resultados.html">RESULTADOS</a>
+            </li>
+            <li>
+                <a id="textoNav" href="plantel.html">PLANTEL</a>
+            </li>
+            <li>
+                <a id="textoNav" href="contactenos.html">CONTÁCTENOS</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <div id="grillaContactenos">
+            <div id="textoContactoUno">
+                <p>¿Tienes alguna duda?</p>
+                <p>¡CONSÚLTANOS!</p>
+                <p>Llene el siguiente formulario con los datos que se soliciten y nos pondremos en contacto con usted lo más pronto posible.</p>
+            </div>
+    
+            
+            <div id="formulario">
+                <form action="">
+                    <div id="subtituloFormulario">
+                         <h4>DATOS PERSONALES</h4>
+                    </div>
+    
+                    <div id="seccionFormulario">
+                        <br> <!--Por favor necesito encontrar otra manera de dejar espacio entre cada parte del formulario, porque br creo que era muy poco profesional, alguna sugerencia o no hay problema?-->
+                        <div>
+                            <label for="nombres">Nombres</label>
+                            <input type="text" placeholder="Ingrese sus nombres" id="nombres">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" placeholder="Ingrese sus apellidos" id="apellidos">
+                        </div>
+                        <br>    
+                        <div>
+                            <label for="nacionalidad">País de origen</label>
+                            <select name="" id="nacionalidad">
+                                <option value="1">Seleccione</option>
+                                <option value="2">Argentina</option>
+                                <option value="3">Bolivia</option>
+                                <option value="4">Colombia</option>
+                                <option value="5">Chile</option>
+                                <option value="6">Ecuador</option>
+                                <option value="7">Paraguay</option>
+                                <option value="8">Perú</option>
+                                <option value="9">Uruguay</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email">Dirección de correo electrónico</label>
+                            <input type="text" placeholder="Ingrese su email" id="email">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="celular">Número de celular</label>
+                            <input type="text" placeholder="Ingrese su n° de celular" id="celular">
+                        </div>
+                        <br>
+                    </div>
+    
+                    <div id="subtituloFormulario">
+                        <h4>¿Cuál es el motivo de su consulta?</h4>
+                    </div>
+    
+                    <div id="seccionFormulario">
+                        <br>
+                        <p>Seleccione una de las siguientes opciones: </p>
+                        <div>
+                                Información adicional   <input type="radio" name="motivo" value="1">
+                                Próximos partidos   <input type="radio" name="motivo" value="2">
+                                Mercado de traspasos   <input type="radio" name="motivo" value="3">
+                                Últimas noticias   <input type="radio" name="motivo" value="4">
+                                Otro motivo   <input type="radio" name="motivo" value="5">
+                        </div>
+                        <br>
+                        <div>
+                            <p>En caso de haber selecccionado la opción "Otro motivo", espcifíquelo en el siguiente recuadro:</p>
+                        </div>
+                        <div>
+                             <textarea name="" id="" cols="50" rows="5"></textarea>
+                        </div>
+                        <br>
+                        <input type="submit" value="Enviar formulario">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2 id="textoFooter">Síguenos en</h2>
+        </div>
+        <div id="divFooter">
+            <div id="imgFooter">
+                <img src="../Imagenes/facebook.png" alt="">
+            </div>
+            <div id="imgFooter">
+                <img src="../Imagenes/instagram.png" alt="">
+            </div>
+            <div id="imgFooter">
+                <img src="../Imagenes/twitter.png" alt="">
+            </div>
+            <div id="imgFooter">
+                <img src="../Imagenes/youtube.png" alt="">
+            </div>
+        </div>
+    </footer> 
+    
+</body>
+</html>

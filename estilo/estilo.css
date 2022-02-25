@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(226, 226, 37);
+}
+
+header{
+    background-color: rgb(226, 226, 37);
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: space-between;
+}
+
+#hijoHeaderUno{
+    height: 100%;
+}
+
+#hijoHeaderDos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#tituloHeaderUno{
+    color: red;
+    font-size: 7vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: end;
+}
+
+#tituloHeaderDos{
+    color: black;
+    font-size: 7vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    background-color: black;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+li{
+    font-size: 3vw;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#textoNav{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#textoFooter{
+    color: white;
+    font-size: 3.5vw;
+    text-align: center;
+    height: 20%;
+}
+
+#divFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    width: 100%;
+    height: 50%;
+}
+
+#imgFooter{
+    width: 5%;
+    height: 80%;
+}
+
+/* INICIO DE index.html */
+
+#grillaIndex{
+    display: grid;
+    background-color: rgb(226, 226, 37);
+}
+
+/*Aún dejo este div para poder guiarme y seguir trabajando*/
+#divEstetica{
+    background-color: rgb(226, 226, 37);
+    height: 75px;
+}
+
+#padreMainUno{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    text-decoration: underline;
+    background-color: rgb(226, 226, 37);
+}
+
+#imgAdd{
+    width: 100%;
+    height: 55%;
+}
+
+#introduccion{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    flex-direction: column;
+    border: solid 3px black;
+}
+
+#subtitulo{
+    color: white;
+    font-size: 4.25vw;
+    font-family: 'Quintessential', cursive;
+}
+
+p{
+    color: white;
+    font-size: 1.3vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#video{
+    height: 50%;
+    width: 50%;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#padreMainDos{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: a3;
+}
+
+#imgIndex{
+    width: 40%;
+    height: 70%;
+    border: 5px ridge black;
+}
+
+/* INICIO DE historia.html */
+
+#grillaHistoria{
+    display: grid;
+    background-color: rgb(226, 226, 37);
+}
+
+#padreHistoriaUno{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    grid-area: a2;
+}
+
+#textoHistoriaUno{
+    width: 60%;
+
+}
+
+#imgHistoriaUno{
+    width: 40%;
+}
+
+#padreHistoriaDos{
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: a4;
+}
+
+#textoHistoriaDos{
+    width: 70%;
+    text-align: right;
+}
+
+#imgHistoriaDos{
+    width: 30%;
+}
+
+#padreHistoriaTres{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    flex-direction: column;
+    grid-area: a6;
+    justify-content: space-around;
+}
+
+#tituloHistoriaTres{
+    color: white;
+    font-size: 3vw;
+    font-family: 'Quintessential', cursive;
+    text-decoration: underline;
+    text-align: center;
+    height: 25%;
+}
+
+#lineaEsteticaHistoriaTres{
+    color: white;
+    background-color: black;
+    height: 10%;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+#salaDeTrofeos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65%;
+}
+
+#enumeracionUnoHistoriaTres{
+    width: 30%;
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#enumeracionDosHistoriaTres{
+    width: 30%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#imgHistoriaTres{
+    width: 30%;
+    height: 90%;
+    border: 3px solid black;
+}
+
+#grillaResultados{
+    display: grid;
+    background-color: rgb(226, 226, 37);
+}
+
+#ultimosResultados{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: a2;
+}
+
+table{
+    background-color: rgb(218, 94, 94);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    height: 70%;
+}
+
+
+th{
+    background-color: rgb(235, 169, 46);
+    border: solid 2px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5vw;
+}
+
+td{
+    border: solid 2px;
+    font-family: 'Righteous', cursive;
+    font-size: 2vw;
+}
+
+tr:nth-child(even){
+    background-color: rgb(228, 8, 8);
+}
+
+#proximosPartidos{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    text-align: right;
+    justify-content: space-evenly;
+    grid-area: a4;
+}
+
+#grillaPlantel{
+    background-color: rgb(226, 226, 37);
+    display: grid;
+}
+
+#imgPlantel{
+    grid-area: a2;
+}
+
+#plantel{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: a4;
+    justify-content: space-evenly;
+}
+
+#grillaContactenos{
+    display: grid;
+    background-color: rgb(226, 226, 37);   
+}
+
+#textoContactoUno{
+    display: flex;
+    background-color: rgb(146, 39, 39);
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: a2;
+    align-items: center;
+}
+
+#formulario{
+    background-color: rgb(146, 39, 39);
+    display: flex;
+    flex-direction: column;
+    grid-area: a3;
+}
+
+#subtituloFormulario{
+    background-color: black;
+    font-size: 1.75vw;
+    font-family: 'Righteous', cursive;
+    color: white;
+    height: 8%;
+    }
+
+#seccionformulario{
+    height: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form{
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/*vista movile*/
+@media only screen and (max-width: 600px){
+    header{
+        height: 115px;
+    }
+    
+    #hijoHeaderUno{
+        width: 20%;
+    }
+    
+    #hijoHeaderDos{
+        width: 65%;
+    }
+
+    ul{
+        height: 50px;
+    }
+    
+    footer{
+        height: 100px;
+    }
+    
+    #grillaIndex{
+        grid-template-rows: 50px 600px 350px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";
+    }
+
+    #padreMainUno{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 600px;
+        justify-content:center;
+        grid-area: a2;
+    }
+    
+    #add{
+        width: 75%;
+        height: 50%;
+    }
+    
+
+
+    #introduccion{
+        height: 50%;
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #padreMainDos{
+        height: 350px;
+        grid-area: a3;
+    }
+    
+    #grillaHistoria{
+        grid-template-rows: 50px 150px 50px 150px 50px 225px 25px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+    }
+    
+    #padreHistoriaUno{
+        height: 150px;
+    }
+
+    #padreHistoriaDos{
+        height: 150px;
+    }
+
+    #padreHistoriaTres{
+        height: 200px;
+    }
+    
+    #grillaResultados{
+        grid-template-rows: 50px 175px 50px 175px 50px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+    
+    #ultimosResultados{
+        height: 175px;
+        flex-direction: column;
+    }
+
+    #proximosPartidos{
+        height: 175px;
+        flex-direction: column;
+    }
+
+    #grillaPlantel{
+        grid-template-rows: 50px 550px 50px 400px 50px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+
+    #imgPlantel{
+        height: 550px;
+    }
+
+    #plantel{
+        height: 400px;
+    }
+
+    #grillaContactenos{
+        grid-template-rows: 50px 75px 400px 50px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+    }
+
+    #textoContactoUno{
+        height: 75px;
+    }
+
+    #formulario{
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    header{
+        height: 250px;
+    }
+    
+    #hijoHeaderUno{
+        width: 20%;
+    }
+    
+    #hijoHeaderDos{
+        width: 75%;
+    }
+
+    ul{
+        height: 100px;
+    }
+
+    footer{
+        height: 150px;
+    }
+
+    #grillaIndex{
+        grid-template-rows: 75px 500px 600px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";
+    }
+
+    #padreMainUno{
+        height: 500px;
+        justify-content: space-evenly;
+        grid-area: a2;
+    }
+
+    #add{
+        width: 30%;
+        height: 100%;
+    }
+
+    #introduccion{
+        width: 65%;
+        text-align: right;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    #padreMainDos{
+        height: 600px;
+        grid-area: a3;
+    }
+
+    #grillaHistoria{
+        grid-template-rows: 75px 350px 75px 350px 75px 450px 75px;
+        grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4"
+                         "a5"
+                         "a6"
+                         "a7";
+    }
+    
+    #padreHistoriaUno{
+        height: 350px;
+    }
+
+    #padreHistoriaDos{
+        height: 350px;
+    }
+
+    #padreHistoriaTres{
+        height: 450px;
+    }
+
+    #grillaResultados{
+        grid-template-rows: 75px 330px 75px 330px 75px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+    
+    #ultimosResultados{
+        height: 330px;
+        align-items: center;
+    }
+
+    #proximosPartidos{
+        height: 330px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    #grillaPlantel{
+        grid-template-rows: 75px 900px 75px 600px 75px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+
+    #imgPlantel{
+        height: 900px;
+    }
+
+    #plantel{
+        height: 600px;
+    }
+
+    #grillaContactenos{
+        grid-template-rows: 75px 150px 800px 75px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+    }
+
+    #textoContactoUno{
+        height: 150px;
+    }
+
+    #formulario{
+        height: 800px;
+    }
+}
