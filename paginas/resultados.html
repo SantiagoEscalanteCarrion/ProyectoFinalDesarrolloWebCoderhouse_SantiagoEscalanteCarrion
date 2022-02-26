@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quintessential&family=Righteous&family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estilo/estilo.css">
     <title>Document</title>
 </head>
@@ -48,93 +50,104 @@
             <!--Primera sección de Resultados-->
             <div id="ultimosResultados">
                 <h2 id="subtitulo">ÚLTIMOS RESULTADOS</h2>
-                <table data-aos="zoom-out">
-                    <tr>
-                        <th>Rival</th>
-                        <th>Condición</th>
-                        <th>Competición</th>
-                        <th>Resultado</th>
-                        <th>Marcador</th>
-                    </tr>
-                    <tr>
-                        <td>Wolves</td>
-                        <td>Local</td>
-                        <td>Premier League</td>
-                        <td>Derrota</td>
-                        <td>0 - 1</td>
-                    </tr>
-                    <tr>
-                        <td>Aston Villa</td>
-                        <td>Local</td>
-                        <td>FA Cup</td>
-                        <td>Victoria</td>
-                        <td>1 - 0</td>
-                    </tr>
-                    <tr>
-                        <td>Aston Villa</td>
+                <table class="table table-warning table-striped" data-aos="zoom-out">
+                    <thead>
+                      <tr>
+                        <th scope="col">Rival</th>
+                        <th scope="col">Condición</th>
+                        <th scope="col">Competición</th>
+                        <th scope="col">Resultado</th>
+                        <th scope="col">Marcador</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Burnley</th>
                         <td>Visitante</td>
                         <td>Premier League</td>
                         <td>Empate</td>
-                        <td>2 - 2</td>
-                    </tr>
-                    <tr>
-                        <td>Brentford</td>
-                        <td>Visitante</td>
+                        <td>1 - 1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Southampton</th>
+                        <td>Local</td>
                         <td>Premier League</td>
-                        <td>Victoria</td>
-                        <td>1 - 3</td>
-                    </tr>
-                    <tr>
-                        <td>West Ham</td>
+                         <td>Empate</td>
+                       <td>1 - 1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Brighton</th>
                         <td>Local</td>
                         <td>Premier League</td>
                         <td>Victoria</td>
-                        <td>1 - 0</td>
-                    </tr>
+                        <td>2 - 0</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Leeds United</th>
+                        <td>Visitante</td>
+                        <td>Premier League</td>
+                        <td>Victoria</td>
+                        <td>2 - 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Atlético Madrid</th>
+                        <td>Visitante</td>
+                        <td>Champions League</td>
+                        <td>Empate</td>
+                        <td>1 - 1</td>
+                      </tr>
+                    </tbody>
                 </table>
+                    
             </div>
 
             <!--Segunda sección de Resultados-->
             <div id="proximosPartidos">
                 <h2 id="subtitulo">PRÓXIMOS PARTIDOS</h2>
-                <table data-aos="zoom-out">
-                    <tr>
-                        <th>Rival</th>
-                        <th>Condición</th>
-                        <th>Competición</th>
-                        <th>Fecha</th>
-                    </tr>
-                    <tr>
-                        <td>Middlesbrough</td>
-                        <td>Local</td>
-                        <td>FA Cup</td>
-                        <td>04/02</td>
-                    </tr>
-                    <tr>
-                        <td>Burnley</td>
-                        <td>Visitante</td>
-                        <td>Premier League</td>
-                        <td>08/02</td>
-                    </tr>
-                    <tr>
-                        <td>Southampton</td>
+
+                <table class="table table-warning table-striped" data-aos="zoom-out">
+                    <thead>
+                      <tr>
+                        <th scope="col">Rival</th>
+                        <th scope="col">Condición</th>
+                        <th scope="col">Competición</th>
+                        <th scope="col">Fecha</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Watford</th>
                         <td>Local</td>
                         <td>Premier League</td>
-                        <td>12/02</td>
-                    </tr>
-                    <tr>
-                        <td>Leeds United</td>
+                        <td>26/02</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Manchester City</th>
                         <td>Visitante</td>
                         <td>Premier League</td>
-                        <td>20/02</td>
-                    </tr>
-                    <tr>
-                        <td>Atlético de Madrid</td>
+                        <td>06/03</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tottenham Hotspurs</th>
+                        <td>Local</td>
+                        <td>Premier League</td>
+                        <td>12/03</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Atlético Madrid</th>
+                        <td>Local</td>
+                        <td>Champions League</td>
+                        <td>15/03</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Liverpool</th>
                         <td>Visitante</td>
-                        <td>UEFA Champions League</td>
-                        <td>23/02</td>
-                    </tr>
+                        <td>Premier League</td>
+                        <td>20/03</td>
+                      </tr>
+                    </tbody>
                 </table>
+                
             </div>
         </div>
 
@@ -145,18 +158,15 @@
             <h2 id="textoFooter">Síguenos en</h2>
         </div>
         <div id="divFooter">
-            <div id="imgFooter">
-                <img src="../Imagenes/facebook.png" alt="">
-            </div>
-            <div id="imgFooter">
-                <img src="../Imagenes/instagram.png" alt="">
-            </div>
-            <div id="imgFooter">
-                <img src="../Imagenes/twitter.png" alt="">
-            </div>
-            <div id="imgFooter">
-                <img src="../Imagenes/youtube.png" alt="">
-            </div>
+
+            <i class="bi bi-facebook"></i>
+
+            <i class="bi bi-instagram"></i>
+
+            <i class="bi bi-twitter"></i>
+
+            <i class="bi bi-youtube"></i>
+            
         </div>
     </footer>   
 
