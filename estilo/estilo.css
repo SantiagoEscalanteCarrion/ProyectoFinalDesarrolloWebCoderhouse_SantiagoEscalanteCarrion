@@ -260,14 +260,22 @@ iframe{
     height: 25%;
 }
 
+#tituloHistoriaTres h2{
+    font-size: 5.5vw;
+}
+
+
 #lineaEsteticaHistoriaTres{
     color: white;
     background-color: black;
     height: 10%;
     text-decoration: none;
-    font-size: 2vw;
     font-family: 'Roboto Mono', monospace;
     
+}
+
+#lineaEsteticaHistoriaTres h4{
+    font-size: 2vw;
 }
 
 #salaDeTrofeos{
@@ -281,22 +289,27 @@ iframe{
     width: 30%;
     color: white;
     text-decoration: none;
-    font-size: 2vw;
     font-family: 'Roboto Mono', monospace;
+}
+
+#enumeracionUnoHistoriaTres p{
+    font-size: 1.5vw;
 }
 
 #enumeracionDosHistoriaTres{
     width: 30%;
     color: white;
     text-decoration: none;
-    font-size: 1.75vw;
     font-family: 'Roboto Mono', monospace;
+}
+
+#enumeracionDosHistoriaTres p{
+    font-size: 1.5vw;
 }
 
 #imgHistoriaTres{
     width: 30%;
     height: 90%;
-    border: 3px solid black;
 }
 
 /* INICIO DE resultados.html */
@@ -499,7 +512,7 @@ form{
     }
     
     #grillaHistoria{
-        grid-template-rows: 50px 150px 50px 150px 50px 225px 25px;
+        grid-template-rows: 50px 150px 50px 150px 50px 250px 25px;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -518,7 +531,11 @@ form{
     }
 
     #padreHistoriaTres{
-        height: 200px;
+        height: 250px;
+    }
+
+    #imgHistoriaTres .slide img{
+        height: 15vh;
     }
     
     #grillaResultados{
@@ -650,6 +667,10 @@ form{
 
     #padreHistoriaTres{
         height: 450px;
+    }
+
+    #imgHistoriaTres .slide img{
+        height: 35vh;
     }
 
     #grillaResultados{
