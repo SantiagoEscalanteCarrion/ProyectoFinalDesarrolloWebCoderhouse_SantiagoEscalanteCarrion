@@ -63,17 +63,17 @@
                         <br> <!--Por favor necesito encontrar otra manera de dejar espacio entre cada parte del formulario, porque br creo que era muy poco profesional, alguna sugerencia o no hay problema?-->
                         <div>
                             <label for="nombres">Nombres</label>
-                            <input type="text" placeholder="Ingrese sus nombres" id="nombres">
+                            <input type="text" class="form-control" placeholder="Ingrese sus nombres" id="nombres">
                         </div>
                         <br>
                         <div>
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" placeholder="Ingrese sus apellidos" id="apellidos">
+                            <input type="text" class="form-control" placeholder="Ingrese sus apellidos" id="apellidos">
                         </div>
                         <br>    
                         <div>
                             <label for="nacionalidad">País de origen</label>
-                            <select name="" id="nacionalidad">
+                            <select class="form-select" name="" id="nacionalidad">
                                 <option value="1">Seleccione</option>
                                 <option value="2">Argentina</option>
                                 <option value="3">Bolivia</option>
@@ -88,12 +88,12 @@
                         <br>
                         <div>
                             <label for="email">Dirección de correo electrónico</label>
-                            <input type="text" placeholder="Ingrese su email" id="email">
+                            <input type="text" class="form-control" placeholder="Ingrese su email" id="email">
                         </div>
                         <br>
                         <div>
                             <label for="celular">Número de celular</label>
-                            <input type="text" placeholder="Ingrese su n° de celular" id="celular">
+                            <input type="text" class="form-control" placeholder="Ingrese su n° de celular" id="celular">
                         </div>
                         <br>
                     </div>
@@ -105,23 +105,32 @@
                     <div id="seccionFormulario">
                         <br>
                         <p>Seleccione una de las siguientes opciones: </p>
-                        <div>
-                                Información adicional   <input type="radio" name="motivo" value="1">
-                                Próximos partidos   <input type="radio" name="motivo" value="2">
-                                Mercado de traspasos   <input type="radio" name="motivo" value="3">
-                                Últimas noticias   <input type="radio" name="motivo" value="4">
-                                Otro motivo   <input type="radio" name="motivo" value="5">
+                        <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-light" for="btnradio1">Información adicional</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio2">Próximos partidos</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio3">Mercado de traspasos</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio4">Últimas noticias</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio5">Otro motivo</label>
                         </div>
                         <br>
-                        <div>
-                            <p>En caso de haber selecccionado la opción "Otro motivo", espcifíquelo en el siguiente recuadro:</p>
+                        <br>
+                        <p>En caso de haber selecccionado la opción "Otro motivo", espcifíquelo en el siguiente recuadro:</p>
                         </div>
                         <div>
                              <textarea name="" id="" cols="50" rows="5"></textarea>
                         </div>
                         <br>
-                        <input type="submit" value="Enviar formulario">
-                        <input type="reset" value="Limpiar">
+                        <input type="submit" class="btn-dark" value="Enviar formulario">
+                        <input type="reset"  class="btn-dark" value="Limpiar">
                     </div>
                 </form>
             </div>

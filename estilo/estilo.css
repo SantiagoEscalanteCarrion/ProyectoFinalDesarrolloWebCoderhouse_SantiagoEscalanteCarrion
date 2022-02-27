@@ -64,7 +64,7 @@ ul{
     flex-wrap: nowrap;
 }
 
-li{
+nav li{
     font-size: 3vw;
     font-family: 'Permanent Marker', cursive;
 }
@@ -392,6 +392,10 @@ iframe{
     align-items: center;
 }
 
+#textoContactoUno p{
+    font-size: 2.5vw;
+}
+
 #formulario{
     background-color: rgb(146, 39, 39);
     display: flex;
@@ -401,11 +405,14 @@ iframe{
 
 #subtituloFormulario{
     background-color: black;
-    font-size: 1.75vw;
     font-family: 'Righteous', cursive;
     color: white;
-    height: 8%;
+    height: 5%;
     }
+
+#subtituloFormulario h4{
+    font-size: 3.5vw;
+}
 
 #seccionformulario{
     height: 42%;
@@ -414,10 +421,19 @@ iframe{
     justify-content: space-evenly;
 }
 
+#grillaContactenos p{
+    font-size: 2.5vw;
+}
+
+
 form{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-family: 'Roboto Mono', monospace;
     color: white;
+}
+
+.btn{
+    font-size: 1.5vw;
 }
 
 /*vista movile*/
@@ -542,7 +558,7 @@ form{
     }
 
     #grillaContactenos{
-        grid-template-rows: 50px 75px 400px 50px;
+        grid-template-rows: 50px 150px 1025px 50px;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -550,11 +566,11 @@ form{
     }
 
     #textoContactoUno{
-        height: 75px;
+        height: 150px;
     }
 
     #formulario{
-        height: 400px;
+        height: 1025px;
     }
 }
 
@@ -674,7 +690,7 @@ form{
     }
 
     #grillaContactenos{
-        grid-template-rows: 75px 150px 800px 75px;
+        grid-template-rows: 75px 275px 2025px 75px;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -682,10 +698,11 @@ form{
     }
 
     #textoContactoUno{
-        height: 150px;
+        height: 275px;
     }
 
     #formulario{
-        height: 800px;
+        height: 2025px;
     }
+
 }
