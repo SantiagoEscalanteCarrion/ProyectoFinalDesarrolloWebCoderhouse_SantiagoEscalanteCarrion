@@ -318,6 +318,7 @@ iframe {
   justify-content: space-evenly; }
 
 form {
+  font-size: 2.5vw;
   font-family: 'Roboto Mono', monospace;
   color: white; }
 
