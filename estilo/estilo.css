@@ -1,4 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+#subtitulo, #tituloHistoriaTres h2 {
+  color: white;
+  font-size: 4.25vw;
+  font-family: "Quintessential", cursive; }
+
+.contenedorResultado, #ultimosResultados, #proximosPartidos {
+  background-color: #922727;
+  display: flex;
+  justify-content: space-evenly; }
+  .contenedorResultado table, #ultimosResultados table, #proximosPartidos table {
+    text-align: center;
+    height: 70%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -14,7 +27,7 @@ header {
 
 #hijoHeaderUno {
   height: 100%; }
-  #hijoHeaderUno :hover {
+  #hijoHeaderUno:hover {
     transform: rotate(-10deg); }
 
 #hijoHeaderDos {
@@ -52,16 +65,14 @@ ul {
 li {
   font-size: 3vw;
   font-family: "Permanent Marker", cursive; }
-
-li:hover {
-  transform: scale(1.1, 1.1); }
+  li:hover {
+    transform: scale(1.1, 1.1); }
 
 #textoNav {
   color: white;
   text-decoration: none; }
-
-#textoNav:hover {
-  color: red; }
+  #textoNav:hover {
+    color: red; }
 
 footer {
   background-color: black;
@@ -119,7 +130,7 @@ footer {
 #imgAdd {
   width: 100%;
   height: 55%; }
-  #imgAdd :hover {
+  #imgAdd:hover {
     transform: scale(1.05, 1.05); }
 
 #introduccion {
@@ -127,11 +138,6 @@ footer {
   display: flex;
   flex-direction: column;
   border: solid 3px black; }
-
-#subtitulo {
-  color: white;
-  font-size: 4.25vw;
-  font-family: "Quintessential", cursive; }
 
 p {
   color: white;
@@ -163,8 +169,7 @@ iframe {
 
 /* INICIO DE historia.html */
 #grillaHistoria {
-  display: grid;
-  background-color: #e2e225; }
+  display: grid; }
 
 #padreHistoriaUno {
   background-color: #922727;
@@ -198,25 +203,20 @@ iframe {
   justify-content: space-around; }
 
 #tituloHistoriaTres {
-  color: white;
-  font-size: 3vw;
-  font-family: 'Quintessential', cursive;
-  text-decoration: underline;
   text-align: center;
   height: 25%; }
-
-#tituloHistoriaTres h2 {
-  font-size: 5.5vw; }
+  #tituloHistoriaTres h2 {
+    font-size: 5.5vw;
+    text-decoration: underline; }
 
 #lineaEsteticaHistoriaTres {
-  color: white;
   background-color: black;
-  height: 10%;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace; }
-
-#lineaEsteticaHistoriaTres h4 {
-  font-size: 2vw; }
+  height: 10%; }
+  #lineaEsteticaHistoriaTres h4 {
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: 'Russo One', sans-serif; }
 
 #salaDeTrofeos {
   display: flex;
@@ -225,22 +225,14 @@ iframe {
   height: 65%; }
 
 #enumeracionUnoHistoriaTres {
-  width: 30%;
-  color: white;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace; }
-
-#enumeracionUnoHistoriaTres p {
-  font-size: 1.5vw; }
+  width: 30%; }
+  #enumeracionUnoHistoriaTres p {
+    font-size: 1.5vw; }
 
 #enumeracionDosHistoriaTres {
-  width: 30%;
-  color: white;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace; }
-
-#enumeracionDosHistoriaTres p {
-  font-size: 1.5vw; }
+  width: 30%; }
+  #enumeracionDosHistoriaTres p {
+    font-size: 1.5vw; }
 
 #imgHistoriaTres {
   width: 30%;
@@ -248,33 +240,17 @@ iframe {
 
 /* INICIO DE resultados.html */
 #grillaResultados {
-  display: grid;
-  background-color: #e2e225; }
+  display: grid; }
 
 #ultimosResultados {
-  background-color: #922727;
-  display: flex;
-  justify-content: space-evenly;
   grid-area: a2; }
 
-#ultimosResultados table {
-  text-align: center;
-  height: 70%; }
-
 #proximosPartidos {
-  background-color: #922727;
-  display: flex;
   text-align: right;
-  justify-content: space-evenly;
   grid-area: a4; }
-
-#proximosPartidos table {
-  text-align: center;
-  height: 70%; }
 
 /* INICIO DE plantel.html */
 #grillaPlantel {
-  background-color: #e2e225;
   display: grid; }
 
 #imgPlantel {
@@ -287,32 +263,29 @@ iframe {
   flex-direction: column;
   grid-area: a4;
   justify-content: space-evenly; }
-
-#plantel table {
-  background-color: #da5e5e;
-  width: 100%;
-  text-align: center;
-  border-collapse: collapse;
-  height: 70%; }
-
-#plantel th {
-  background-color: #eba92e;
-  border: solid 2px;
-  font-family: 'Russo One', sans-serif;
-  font-size: 2.5vw; }
-
-#plantel td {
-  border: solid 2px;
-  font-family: 'Righteous', cursive;
-  font-size: 2vw; }
-
-#plantel tr:nth-child(even) {
-  background-color: #e40808; }
+  #plantel table {
+    background-color: #da5e5e;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    height: 70%; }
+  #plantel th {
+    background-color: #eba92e;
+    border: solid 2px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5vw; }
+  #plantel td {
+    border: solid 2px;
+    font-family: 'Righteous', cursive;
+    font-size: 2vw; }
+  #plantel tr:nth-child(even) {
+    background-color: #e40808; }
 
 /* INICIO DE contactenos.html */
 #grillaContactenos {
-  display: grid;
-  background-color: #e2e225; }
+  display: grid; }
+  #grillaContactenos p {
+    font-size: 2.5vw; }
 
 #textoContactoUno {
   display: flex;
@@ -321,9 +294,8 @@ iframe {
   justify-content: space-evenly;
   grid-area: a2;
   align-items: center; }
-
-#textoContactoUno p {
-  font-size: 2.5vw; }
+  #textoContactoUno p {
+    font-size: 2.5vw; }
 
 #formulario {
   background-color: #922727;
@@ -333,12 +305,11 @@ iframe {
 
 #subtituloFormulario {
   background-color: black;
-  font-family: 'Righteous', cursive;
-  color: white;
   height: 5%; }
-
-#subtituloFormulario h4 {
-  font-size: 3.5vw; }
+  #subtituloFormulario h4 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 3.5vw; }
 
 #seccionformulario {
   height: 42%;
@@ -346,11 +317,7 @@ iframe {
   flex-direction: column;
   justify-content: space-evenly; }
 
-#grillaContactenos p {
-  font-size: 2.5vw; }
-
 form {
-  font-size: 2.5vw;
   font-family: 'Roboto Mono', monospace;
   color: white; }
 

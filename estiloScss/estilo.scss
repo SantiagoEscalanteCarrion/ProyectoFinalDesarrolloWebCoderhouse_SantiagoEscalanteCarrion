@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import "variables.scss";
+@import "extends.scss";
+@import "mixins.scss";
 
 *{
     margin: 0;
@@ -19,7 +21,7 @@ header{
 
 #hijoHeaderUno{
     height: 100%;
-    :hover{
+    &:hover{
         transform: rotate(-10deg);
     }
 }
@@ -65,23 +67,18 @@ ul{
 li{
     font-size: $tallaLetraNav;
     font-family: $fuenteNav;
-    
-}
-
-li:hover{
-    transform: scale(1.1, 1.1);
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
 }
 
 #textoNav{
     color: $colorLetraNav;
     text-decoration: none;
+    &:hover{
+        color: $colorNavHover;
+    }
 }
-
-#textoNav:hover{
-    color: $colorNavHover;
-}
-
-
 
 footer{
     background-color: $colorFooter;
@@ -107,22 +104,22 @@ footer{
 }
 
 .bi-facebook{
-    color: white;
+    color: $colorLetraFooter;
     font-size: 3.5vw;
 }
 
 .bi-instagram{
-    color: white;
+    color: $colorLetraFooter;
     font-size: 3.5vw;
 }
 
 .bi-twitter{
-    color: white;
+    color: $colorLetraFooter;
     font-size: 3.5vw;
 }
 
 .bi-youtube{
-    color: white;
+    color: $colorLetraFooter;
     font-size: 3.5vw;
 }
 
@@ -151,7 +148,7 @@ footer{
     width: 100%;
     height: 55%;
 
-    :hover{
+    &:hover{
         transform: scale(1.05, 1.05);
     }
 }
@@ -161,12 +158,6 @@ footer{
     display: flex;
     flex-direction: column;
     border: solid 3px black;
-}
-
-#subtitulo{
-    color: $colorSubtitulos;
-    font-size: $tallaSubtitulos;
-    font-family: $fuenteSubtitulos;
 }
 
 p{
@@ -207,11 +198,10 @@ iframe{
 
 #grillaHistoria{
     display: grid;
-    background-color: rgb(226, 226, 37);
 }
 
 #padreHistoriaUno{
-    background-color: rgb(146, 39, 39);
+    background-color: $colorContenedor;
     display: flex;
     grid-area: a2;
 }
@@ -242,7 +232,7 @@ iframe{
 }
 
 #padreHistoriaTres{
-    background-color: rgb(146, 39, 39);
+    background-color: $colorContenedor;
     display: flex;
     flex-direction: column;
     grid-area: a6;
@@ -250,30 +240,24 @@ iframe{
 }
 
 #tituloHistoriaTres{
-    color: white;
-    font-size: 3vw;
-    font-family: 'Quintessential', cursive;
-    text-decoration: underline;
     text-align: center;
     height: 25%;
+    h2{
+        @extend #subtitulo;
+        font-size: 5.5vw;
+        text-decoration: underline;
+    }
 }
-
-#tituloHistoriaTres h2{
-    font-size: 5.5vw;
-}
-
 
 #lineaEsteticaHistoriaTres{
-    color: white;
     background-color: black;
     height: 10%;
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    
-}
-
-#lineaEsteticaHistoriaTres h4{
-    font-size: 2vw;
+    h4{
+        color: $colorSubtitulos;
+        font-size: 2vw;
+        text-decoration: none;
+        font-family: 'Russo One', sans-serif;
+    }
 }
 
 #salaDeTrofeos{
@@ -284,25 +268,11 @@ iframe{
 }
 
 #enumeracionUnoHistoriaTres{
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#enumeracionUnoHistoriaTres p{
-    font-size: 1.5vw;
+    @include enumeracion();
 }
 
 #enumeracionDosHistoriaTres{
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#enumeracionDosHistoriaTres p{
-    font-size: 1.5vw;
+    @include enumeracion();
 }
 
 #imgHistoriaTres{
@@ -314,38 +284,22 @@ iframe{
 
 #grillaResultados{
     display: grid;
-    background-color: rgb(226, 226, 37);
 }
 
 #ultimosResultados{
-    background-color: rgb(146, 39, 39);
-    display: flex;
-    justify-content: space-evenly;
+    @extend .contenedorResultado;
     grid-area: a2;
 }
 
-#ultimosResultados table{
-    text-align: center;
-    height: 70%;
-}
-
 #proximosPartidos{
-    background-color: rgb(146, 39, 39);
-    display: flex;
+    @extend .contenedorResultado;
     text-align: right;
-    justify-content: space-evenly;
     grid-area: a4;
-}
-
-#proximosPartidos table{
-    text-align: center;
-    height: 70%;
 }
 
 /* INICIO DE plantel.html */
 
 #grillaPlantel{
-    background-color: rgb(226, 226, 37);
     display: grid;
 }
 
@@ -354,61 +308,62 @@ iframe{
 }
 
 #plantel{
-    background-color: rgb(146, 39, 39);
+    background-color: $colorContenedor;
     display: flex;
     align-items: center;
     flex-direction: column;
     grid-area: a4;
     justify-content: space-evenly;
+    table{
+        background-color: $colorSecundarioTabla;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        height: 70%;
+    }
+    
+    th{
+        background-color: $colorHeadTabla;
+        border: solid 2px;
+        font-family: 'Russo One', sans-serif;
+        font-size: 2.5vw;
+    }
+    
+    td{
+        border: solid 2px;
+        font-family: 'Righteous', cursive;
+        font-size: 2vw;
+    }
+
+    tr:nth-child(even){
+        background-color: $colorPrimarioTabla;
+    }
 }
 
-#plantel table{
-    background-color: rgb(218, 94, 94);
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-    height: 70%;
-}
 
-
-#plantel th{
-    background-color: rgb(235, 169, 46);
-    border: solid 2px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 2.5vw;
-}
-
-#plantel td{
-    border: solid 2px;
-    font-family: 'Righteous', cursive;
-    font-size: 2vw;
-}
-
-#plantel tr:nth-child(even){
-    background-color: rgb(228, 8, 8);
-}
 /* INICIO DE contactenos.html */
 
 #grillaContactenos{
     display: grid;
-    background-color: rgb(226, 226, 37);   
+    p{
+        font-size: 2.5vw;
+    }
 }
 
 #textoContactoUno{
     display: flex;
-    background-color: rgb(146, 39, 39);
+    background-color: $colorContenedor;
     flex-direction: column;
     justify-content: space-evenly;
     grid-area: a2;
     align-items: center;
-}
-
-#textoContactoUno p{
-    font-size: 2.5vw;
+    p{
+        font-size: 2.5vw;
+    }
 }
 
 #formulario{
-    background-color: rgb(146, 39, 39);
+    background-color: $colorContenedor;
     display: flex;
     flex-direction: column;
     grid-area: a3;
@@ -416,13 +371,12 @@ iframe{
 
 #subtituloFormulario{
     background-color: black;
-    font-family: 'Righteous', cursive;
-    color: white;
     height: 5%;
+    h4{
+        font-family: 'Righteous', cursive;
+        color: $colorSubtitulos;
+        font-size: 3.5vw;
     }
-
-#subtituloFormulario h4{
-    font-size: 3.5vw;
 }
 
 #seccionformulario{
@@ -432,13 +386,7 @@ iframe{
     justify-content: space-evenly;
 }
 
-#grillaContactenos p{
-    font-size: 2.5vw;
-}
-
-
 form{
-    font-size: 2.5vw;
     font-family: 'Roboto Mono', monospace;
     color: white;
 }

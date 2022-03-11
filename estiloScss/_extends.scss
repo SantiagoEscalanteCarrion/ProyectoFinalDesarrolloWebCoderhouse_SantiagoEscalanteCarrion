@@ -1,0 +1,15 @@
+#subtitulo{
+    color: $colorSubtitulos;
+    font-size: $tallaSubtitulos;
+    font-family: $fuenteSubtitulos;
+}
+
+.contenedorResultado{
+    background-color: $colorContenedor;
+    display: flex;
+    justify-content: space-evenly;
+    table{
+        text-align: center;
+        height: 70%;
+    }
+}
