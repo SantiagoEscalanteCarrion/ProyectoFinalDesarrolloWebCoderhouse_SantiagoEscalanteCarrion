@@ -1,0 +1,136 @@
+@media only screen and (min-width: 992px){
+    header{
+        height: 250px;
+    }
+    
+    #hijoHeaderUno{
+        width: 20%;
+    }
+    
+    #hijoHeaderDos{
+        width: 75%;
+    }
+
+    ul{
+        height: 100px;
+    }
+
+    footer{
+        height: 150px;
+    }
+
+    #grillaIndex{
+        grid-template-rows: 75px 500px 600px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";
+    }
+
+    #padreMainUno{
+        height: 500px;
+        justify-content: space-evenly;
+        grid-area: a2;
+    }
+
+    #add{
+        width: 30%;
+        height: 100%;
+    }
+
+    #introduccion{
+        width: 65%;
+        text-align: right;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    #padreMainDos{
+        height: 600px;
+        grid-area: a3;
+    }
+
+    .slide img{
+        height: 70.5vh;
+    }
+
+    #grillaHistoria{
+        grid-template-rows: 75px 350px 75px 350px 75px 450px 75px;
+        grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4"
+                         "a5"
+                         "a6"
+                         "a7";
+    }
+    
+    #padreHistoriaUno{
+        height: 350px;
+    }
+
+    #padreHistoriaDos{
+        height: 350px;
+    }
+
+    #padreHistoriaTres{
+        height: 450px;
+    }
+
+    #imgHistoriaTres .slide img{
+        height: 35vh;
+    }
+
+    #grillaResultados{
+        grid-template-rows: 75px 330px 75px 330px 75px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+    
+    #ultimosResultados{
+        height: 330px;
+        align-items: center;
+    }
+
+    #proximosPartidos{
+        height: 330px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    #grillaPlantel{
+        grid-template-rows: 75px 900px 75px 750px 75px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+
+    #imgPlantel{
+        height: 900px;
+    }
+
+    #plantel{
+        height: 750px;
+    }
+
+    #grillaContactenos{
+        grid-template-rows: 75px 275px 2025px 75px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+    }
+
+    #textoContactoUno{
+        height: 275px;
+    }
+
+    #formulario{
+        height: 2025px;
+    }
+
+}

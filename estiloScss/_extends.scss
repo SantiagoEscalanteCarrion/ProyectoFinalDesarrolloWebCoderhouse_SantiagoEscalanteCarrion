@@ -1,9 +1,12 @@
+/*usado en historia.html*/
 #subtitulo{
     color: $colorSubtitulos;
     font-size: $tallaSubtitulos;
     font-family: $fuenteSubtitulos;
 }
 
+
+/*usado en resultados.html*/
 .contenedorResultado{
     background-color: $colorContenedor;
     display: flex;
