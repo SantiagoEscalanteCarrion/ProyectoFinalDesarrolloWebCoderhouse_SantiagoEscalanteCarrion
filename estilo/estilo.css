@@ -378,13 +378,6 @@ iframe {
 #grillaResultados {
   display: grid; }
 
-#ultimosResultados {
-  grid-area: a2; }
-
-#proximosPartidos {
-  text-align: right;
-  grid-area: a4; }
-
 table {
   background-color: #da5e5e;
   width: 100%;
@@ -405,6 +398,13 @@ td {
 
 tr:nth-child(even) {
   background-color: #e40808; }
+
+#ultimosResultados {
+  grid-area: a2; }
+
+#proximosPartidos {
+  text-align: right;
+  grid-area: a4; }
 
 /* INICIO DE plantel.html */
 #grillaPlantel {
