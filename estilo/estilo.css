@@ -10,9 +10,6 @@
   background-color: #922727;
   display: flex;
   justify-content: space-evenly; }
-  .contenedorResultado table, #ultimosResultados table, #proximosPartidos table {
-    text-align: center;
-    height: 70%; }
 
 /*usado en historia.html*/
 @media only screen and (max-width: 600px) {
