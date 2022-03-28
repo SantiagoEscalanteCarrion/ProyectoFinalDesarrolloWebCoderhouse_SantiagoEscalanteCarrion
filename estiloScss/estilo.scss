@@ -287,17 +287,6 @@ iframe{
     display: grid;
 }
 
-#ultimosResultados{
-    @extend .contenedorResultado;
-    grid-area: a2;
-}
-
-#proximosPartidos{
-    @extend .contenedorResultado;
-    text-align: right;
-    grid-area: a4;
-}
-
 table{
     background-color: $colorSecundarioTabla;
     width: 100%;
@@ -321,6 +310,17 @@ td{
 
 tr:nth-child(even){
     background-color: $colorPrimarioTabla;
+}
+
+#ultimosResultados{
+    @extend .contenedorResultado;
+    grid-area: a2;
+}
+
+#proximosPartidos{
+    @extend .contenedorResultado;
+    text-align: right;
+    grid-area: a4;
 }
 
 /* INICIO DE plantel.html */
