@@ -81,7 +81,7 @@
     }
 
     #grillaResultados{
-        grid-template-rows: 75px 330px 75px 330px 75px;
+        grid-template-rows: 75px 475px 75px 475px 75px;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -90,12 +90,12 @@
     }
     
     #ultimosResultados{
-        height: 330px;
+        height: 475px;
         align-items: center;
     }
 
     #proximosPartidos{
-        height: 330px;
+        height: 475px;
         flex-direction: row-reverse;
         align-items: center;
     }
